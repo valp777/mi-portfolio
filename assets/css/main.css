@@ -1,0 +1,265 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fonts */
+  :root {
+    --default-font: "Roboto", sans-serif;
+    --heading-font: "Raleway", sans-serif;
+    --default-color: #444444;
+    --heading-color: #2a2c39;
+    --accent-color: #ef6603;
+    --background-color: #ffffff;
+    --section-background: #f9f9f9; /* Light background for sections */
+    --dark-background: #2a2c39; /* Dark background for the hero section */
+    --contrast-color: #ffffff;
+    --highlight-color: #ff6600; /* Hover color */
+  }
+
+/* Global Styles */
+body {
+    font-family: var(--default-font);
+    color: var(--default-color);
+    background-color: var(--background-color);
+    scroll-behavior: smooth;
+  }
+
+/* Basic link styling */
+a {
+    color: var(--accent-color); /* Link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+/* Hover state for links */
+a:hover {
+   color: var(--highlight-color); /* Change color on hover */
+   text-decoration: underline; /* Add underline on hover */
+}
+
+/* header?? */
+
+
+/* main?? */
+
+
+/* Hero Section */
+  .hero {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: var(--dark-background);
+    color: var(--contrast-color);
+    padding: 150px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+
+  /* Adjustments for intro */
+  .intro-section .intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px; /* Adjust this value as needed */
+    padding: 20px;
+    margin-bottom: 150px; /* Adjust to move the waves down */
+  }
+
+  .intro-container h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  .intro-subtext {
+    font-size: 18px; /* Adjust size as needed */
+    margin-bottom: 5px; /* Space between lines of text */
+    max-width: 100%; /* Limit width if needed */
+    text-align: center; /* Center-align text */
+  }
+
+  /* Connect Section */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between icons */
+  }
+
+  .social-icon {
+    width: 50px; /* Size of the icons */
+    height: 50px; /* Ensures the icons are square */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    margin-bottom: 35px;
+  }
+
+  .social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+
+  .email-icon {
+    width: 80px;
+    height: 50px;
+  }
+
+  .hero .hero-waves {
+    display: block;
+    width: 100%;
+    height: 60px;
+    position: relative;
+  }
+
+  .hero .wave1 use {
+    animation: move-forever1 10s linear infinite;
+    animation-delay: -2s;
+    fill: var(--contrast-color);
+    opacity: 0.6;
+  }
+
+  .hero .wave2 use {
+    animation: move-forever2 8s linear infinite;
+    animation-delay: -2s;
+    fill: var(--contrast-color);
+    opacity: 0.4;
+  }
+
+  .hero .wave3 use {
+    animation: move-forever3 6s linear infinite;
+    animation-delay: -2s;
+    fill: var(--contrast-color);
+  }
+
+  @keyframes move-forever1 {
+    0% { transform: translate(85px, 0%); }
+    100% { transform: translate(-90px, 0%); }
+  }
+
+  @keyframes move-forever2 {
+    0% { transform: translate(-90px, 0%); }
+    100% { transform: translate(85px, 0%); }
+  }
+
+  @keyframes move-forever3 {
+    0% { transform: translate(-90px, 0%); }
+    100% { transform: translate(85px, 0%); }
+  }
+/* End Hero Waves Section */
+
+/* About Section */
+.about {
+    background: var(--contrast-background);
+    padding: 60px 0;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .about .section-title {
+    text-align: left; /* Align the title container to the left */
+    padding-left: 30px; /* Add some left padding for spacing */
+  }
+
+  .about .section-title h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .about .section-title p {
+    max-width: 800px; /* Set the maximum width for the paragraph */
+    width: 100%;
+    text-align: center; /* Center-align the text */
+    padding: 0 20px; /* Add padding for some space around the text */
+    margin: 0 auto; /* Center the paragraph within the container */
+    line-height: 1.5;
+    font-size: 23px;
+  }
+
+/* End About Section */
+
+/* Projects Section */
+  .project {
+    padding: 0px 0;
+    text-align: center;
+  }
+
+  .project .section-title h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 30px;
+  }
+  .project .section-title p {
+    font-size: 25px;
+    color: var(--default-color);
+    text-align: center;
+    padding-top: 20px;
+  }
+/* End Projects Section */
+  
+  /* Skills Section */
+  .skills {
+    padding: 80px 0;
+    text-align: center;
+  }
+
+
+  .skills .section-title {
+    text-align: left;
+    padding-left: 30px;
+  }
+  
+  .skills .section-title h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .skills .section-title p {
+    font-size: 23px;
+    color: var(--default-color);
+    margin-bottom: 25px;
+  }
+
+  .skills .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    /*align-items: flex-start; /* Center items vertically */
+  }
+  
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+    max-width: 1000px; /* Max width for the grid */
+    margin: 0 auto; /* Center the grid within the container */
+  }
+
+  .skill-item {
+    background: var(--section-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px; /* Set width to make items more square */
+    height: 180px; /* Set height to make items more square */
+  }
+  
+  .skill-item h3 {
+    font-size: 24px;
+    color: var(--heading-color);
+    margin-bottom: 10px;
+  }
+
+  .skill-icon {
+    max-width: 90px; /* Adjust icon size as needed */
+    height: auto;
+    background-color: transparent; /*??*/
+  }
