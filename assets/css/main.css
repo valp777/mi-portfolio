@@ -168,9 +168,12 @@ a:hover {
   
   .about .section-title p {
     max-width: 800px; /* Set the maximum width for the paragraph */
+    background: var(--section-background);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* adds rounded corner edges to text container */
     width: 100%;
     text-align: center; /* Center-align the text */
-    padding: 0 20px; /* Add padding for some space around the text */
+    padding: 20px; /* Adds padding for space around the text */
     margin: 0 auto; /* Center the paragraph within the container */
     line-height: 1.5;
     font-size: 23px;
