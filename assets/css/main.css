@@ -199,6 +199,59 @@ a:hover {
     text-align: center;
     padding-top: 20px;
   }
+
+  .project .projects-contianer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+    max-width: 1000px; /* Max width for the grid */
+    margin: 0 auto; /* Center the grid within the container */
+  }
+
+  .project-item {
+    background: var(--section-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 400px;
+  }
+
+  .project-item h3 {
+    font-size: 24px;
+    color: var(--heading-color);
+    margin-bottom: 25px;
+  }
+
+  .project-item p {
+    margin-bottom: 15px;
+  }
+
+  .project-item button {
+    background: var(--dark-background);
+    color:#f9f9f9;
+    font-size: 15px;
+    padding: 12px 28px;
+    border-radius: 12px;
+  }
+
+  .repo-button:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+
 /* End Projects Section */
   
   /* Skills Section */
